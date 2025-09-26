@@ -28,14 +28,16 @@ public async Task<IEnumerable<string>> ReadStockNameAsync(IEnumerable<string> sy
 출처:https://hyeo-noo.tistory.com/426
 
 # 2. WireShark 프로그램 
-   > 통신할 때 네트워크 패킷을 감시 및 분석하는 프로그램
+> 통신할 때 네트워크 패킷을 감시 및 분석하는 프로그램
 
-조건문 이용해서 내가 원하는 주소로 들어오는 패킷 감시, 분석 가능
+> 조건문 이용해서 내가 원하는 주소로 들어오는 패킷 감시, 분석 가능
 
 # 3. GUI - Dispatcher
-> 오류: 다른 스레드가 이 개체를 소유하고 있어 호출한 스레드가 해당 개체에 액세스할 수 없습니다. 
+> 오류: 다른 스레드가 이 개체를 소유하고 있어 호출한 스레드가 해당 개체에 액세스할 수 없습니다.
+>  
 > GUI 스레드에서 할당된 변수를 다른 스레드에서 바꾸려 할 때 에러 발생( Cross Thread 문제)
-> 이 떄, *Dispatcher.Invoke** 나 **Dispatcher.BeginInvoke** 사용
+> 
+> 이 때, *Dispatcher.Invoke** 나 **Dispatcher.BeginInvoke** 사용
 
 - Invoke: 동기
 - BeginInvoke: 비동기
